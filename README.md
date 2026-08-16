@@ -13,8 +13,13 @@ as it edits your `.ps1` / `.psm1` / `.psd1`. Built on PowerShell Editor Services
 /plugin install powershell-lsp
 ```
 
-27 releases. GPL-3.0. Every tag ships a CycloneDX SBOM and a Sigstore keyless
-signature, and [TRUST.md](https://github.com/manderse21/claude-powershell-lsp/blob/main/TRUST.md)
+28 releases. GPL-3.0. Published releases begin at v1.17.0; the 15 tags before it
+are lightweight pre-publication markers with no release attached. Every published
+release from v1.17.0 on carries a CycloneDX SBOM and a Sigstore keyless build
+provenance attestation, with one deliberate exception -- v1.18.1 was published
+retroactively and does not reproduce build assets that did not exist at its
+original build time.
+[TRUST.md](https://github.com/manderse21/claude-powershell-lsp/blob/main/TRUST.md)
 states plainly what those attestations do *not* prove.
 
 ## Technical focus
